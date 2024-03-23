@@ -1,0 +1,182 @@
+.logo {
+    background-image: url('../../images/cropped-Dino-Logo-1-1.png');
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .4s;
+    padding: 0 5rem;
+}
+
+.header.sticky {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.018);
+    backdrop-filter: blur(5px);
+}
+
+.logo-container {
+    position: relative;
+    /* background-color: blueviolet; */
+    height: 10rem;
+    transform: scale(.7);
+    height: auto;
+}
+
+.logo-container:hover {
+    cursor: pointer;
+}
+
+.logo {
+    position: relative;
+    /* background-color: aqua; */
+    max-width: 100%;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    /* scale: .7; */
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    margin-right: 5rem;
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-left: 3.5rem;
+    transition: .3s;
+    list-style: none;
+}
+.navbar.active a{
+    
+    margin-left: 5rem;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+#menu-icon {
+    position: relative;
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+span {
+    color: var(--main-color);
+}
+
+@media(max-width:1050px) {
+    .header {
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.018);
+        backdrop-filter: blur(5px);
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--main-color);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        z-index: 1;
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar .active-nav {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: #010001;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        z-index: -1;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active .active-nav {
+        left: 0;
+        transition-delay: 0.25s;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translate(-20rem);
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translate(0);
+        transition-delay: 0.25s;
+    }
+
+    .home-imgHover {
+        pointer-events: none;
+        background: var(--bg-color);
+        opacity: .6;
+    }
+
+    .portfolio .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 4rem;
+        gap: 5rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .header {
+        padding: 0 2rem;
+    }
+    .logo-container {
+        transform: scale(.5);
+    }
+
+    .navbar a {
+        font-size: 1.8rem;
+    }
+
+    .navbar.active a {
+        font-size: 2rem;
+    }
+
+    .navbar .active-nav {
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+    }
+
+}
