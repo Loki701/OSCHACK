@@ -2,9 +2,9 @@ import './RacingTeam.css'
 
 const RacingTeam = () => {
     return (
-        <div className='racingteam'>
+        <section id='racingteam' className='racingteam'>
         <h1>Racing Team</h1>
-        </div>
+        </section>
     );
 }
 

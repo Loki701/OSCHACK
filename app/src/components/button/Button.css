@@ -1,0 +1,59 @@
+/* Button Styles */
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 100%;
+    border: 0.15rem solid var(--main-color);
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.5s;
+    overflow: hidden;
+    padding: .5rem .2rem;
+  }
+  
+  /* Button default style */
+  .button.black {
+    background-color: black;
+    color: var(--main-color);
+    transition-duration: .7s;
+  }
+  .button.black:hover {
+    color: black;
+    background-color: var(--main-color);
+  }
+  
+  /* Button alternative style */
+  .button.bg-mainColor {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+  }
+  
+  /* Button before pseudo-element */
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -10;
+    transition: width 0.5s;
+  }
+  
+  /* Button hover effect */
+  .button:hover::before {
+    width: 100%;
+  }
+  
+  /* Button hover text color */
+  .button:hover {
+    color: var(--main-color);
+    background-color: black;
+  }
+  

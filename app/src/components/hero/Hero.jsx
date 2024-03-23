@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { bgGoldRed, cans } from "../../images"; // Import your background image
 import "./Hero.css";
+import Button from "../button/Button";
 
 const Hero = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -18,7 +19,7 @@ const Hero = () => {
   }, []); // Empty dependency array ensures that this effect runs only once
 
   return (
-    <div id="hero" className="parallax-wrapper">
+    <section id="hero" className="parallax-wrapper">
       <div className="parallax-content">
         <img
           className="hero__background"
@@ -30,15 +31,17 @@ const Hero = () => {
           <div className="content-text">
             <h1>Dino Energy</h1>
             <p>Bosting your energy, the healthy way.</p>
-            <button>Shop Now</button>
-            <button>Explore</button>
+            <div className="button-container">
+            <Button title="Explore" id="feature" toggle={false}/>
+            <Button title="Shop Now" id="location" />
+            </div>
           </div>
           <div className="content-image">
             <img src={cans} alt="Product" />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -60,10 +60,7 @@
     transition: .3s;
     list-style: none;
 }
-.navbar.active a{
-    
-    margin-left: 5rem;
-}
+
 
 .navbar a:hover,
 .navbar a.active {
@@ -145,24 +142,13 @@ span {
         transform: translate(0);
         transition-delay: 0.25s;
     }
-
-    .home-imgHover {
-        pointer-events: none;
-        background: var(--bg-color);
-        opacity: .6;
-    }
-
-    .portfolio .portfolio-container {
-        grid-template-columns: repeat(1, 1fr);
-        margin: 0 4rem;
-        gap: 5rem;
-    }
 }
 
 @media(max-width: 768px) {
     .header {
         padding: 0 2rem;
     }
+
     .logo-container {
         transform: scale(.5);
     }

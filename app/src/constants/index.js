@@ -1,11 +1,11 @@
 const headerSections = [
     {
-        id: 'features',
-        title: 'Features'
-    },
-    {
         id: 'about',
         title: 'About'
+    },
+    {
+        id: 'features',
+        title: 'Features'
     },
     {
         id: 'news',

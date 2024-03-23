@@ -1,11 +1,11 @@
-import './Feature.css';
+import "./Feature.css";
 
 const Feature = () => {
-    return (
-        <div className='feature'>
-        <h1>Feature</h1>
-        </div>
-    );
-}
+  return (
+    <section id="features" className="feature">
+      <h1>Feature</h1>
+    </section>
+  );
+};
 
 export default Feature;

@@ -2,9 +2,9 @@ import './Location.css';
 
 const Location = () => {
     return (
-        <div className="location">
+        <section id='location' className="location">
             <h1>Location</h1>
-        </div>
+        </section>
     )
 }
 
