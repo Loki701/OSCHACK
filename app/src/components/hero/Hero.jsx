@@ -29,9 +29,9 @@ const Hero = () => {
         />
         <div className="hero__content">
           <div className="content-text">
-            <div class="wrapper">
-              <div class="bg"> Dino Energy </div>
-              <div class="fg"> Dino Energy </div>
+            <div className="wrapper">
+              <div className="bg"> Dino Energy </div>
+              <div className="fg"> Dino Energy </div>
             </div>
             {/* <h1>Dino Energy</h1> */}
             <p>Bosting your energy, the healthy way.</p>

@@ -26,22 +26,22 @@ const Footer = () => {
 
           <ul className="links">
             <li className="link">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i className="fa fa-facebook" aria-hidden="true"></i>
             </li>
             <li className="link">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i className="fa fa-twitter" aria-hidden="true"></i>
             </li>
             <li className="link">
-              <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              <i className="fa fa-youtube-play" aria-hidden="true"></i>
             </li>
             <li className="link">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <i className="fa fa-linkedin" aria-hidden="true"></i>
             </li>
             <li className="link">
-              <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+              <i className="fa fa-pinterest-p" aria-hidden="true"></i>
             </li>
             <li className="link">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i className="fa fa-instagram" aria-hidden="true"></i>
             </li>
           </ul>
         </div>
