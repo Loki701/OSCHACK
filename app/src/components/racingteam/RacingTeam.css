@@ -1,3 +1,24 @@
 .racingteam{
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 15rem;
+}
+
+.racingteam h1{
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: -.2rem;
+    font-weight: 600;
+    margin-bottom: 8rem;
+}
+.racingteam p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+.racingteam .container{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 20rem;
+    padding: 0 5rem;
+    /* background-color: aquamarine; */
 }

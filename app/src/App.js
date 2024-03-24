@@ -9,6 +9,7 @@ import Reviews from './components/reviews/Reviews';
 import Location from './components/location/Location';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import Chatbot from './components/chatbot/Chatbot';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <RacingTeam />
       <Location />
       <Contact />
+      <Chatbot />
       <Footer />
     </div>
   );

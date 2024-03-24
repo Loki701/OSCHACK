@@ -1,3 +1,21 @@
 .location{
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location h1{
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: -.1rem;
+    font-weight: 600;
+    margin-bottom: 8rem;
+}
+.location p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
 }

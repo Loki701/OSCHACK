@@ -4,8 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 14rem;
-    height: 100%;
+    width: 18rem;
+    height: 6rem;
     border: 0.15rem solid var(--main-color);
     border-radius: 0.8rem;
     font-size: 1.8rem;
@@ -56,4 +56,13 @@
     color: var(--main-color);
     background-color: black;
   }
-  
+  .button.black.bgT {
+    background: transparent;
+  }
+  .button.black.bgT:hover {
+    color: white;
+    background: transparent;
+  }
+  .button.bg-mainColor.bgT{
+    background: transparent;
+  }

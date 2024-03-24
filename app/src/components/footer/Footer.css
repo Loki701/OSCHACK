@@ -1,3 +1,146 @@
-.footer{
-    height: 50vh;
+/* Footer styles */
+.footer {
+    /* background-color: #f2f2f2; */
+    border-top: solid 1px var(--main-color);
+    padding: 2rem 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #007bff; */
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.newsletter {
+    flex: 1;
+    max-width: 400px;
+    padding: 0 1rem;
+}
+.footer .logo {
+    width: 100px;
+    height: auto;
+}
+
+.actions {
+    margin-top: 1rem;
+}
+.actions p{
+    margin-bottom: 2rem;
+}
+
+.footer-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.footer-form input[type="email"] {
+    width: 70%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer-form button {
+    padding: 0.5rem 1rem;
+    /* background-color: black; */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 1rem;
+    background-color: var(--main-color);
+}
+
+.footer-form button:hover {
+    background-color: var(--second-main-color);
+    color: white;
+}
+
+.footer .links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 400px;
+    padding: 0 1rem;
+}
+.footer .link{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    color: black;
+    font-size: 1.5rem;
+    transition-duration: .5s;
+}
+.footer .link:hover{
+    cursor: pointer;
+    background-color: var(--second-main-color);
+    color: white;
+}
+.footer .link li{
+    z-index: 100;
+}
+
+.credits {
+    margin-top: 2rem;
+    text-align: center;
+}
+.credits p{
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 1rem 1rem;
+        margin-bottom: 3rem;
+    }
+    .newsletter{
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter {
+        margin-bottom: 1rem;
+    }
+
+    .footer .links {
+        margin-top: 1rem;
+    }
 }

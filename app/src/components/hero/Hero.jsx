@@ -29,16 +29,20 @@ const Hero = () => {
         />
         <div className="hero__content">
           <div className="content-text">
-            <h1>Dino Energy</h1>
+            <div class="wrapper">
+              <div class="bg"> Dino Energy </div>
+              <div class="fg"> Dino Energy </div>
+            </div>
+            {/* <h1>Dino Energy</h1> */}
             <p>Bosting your energy, the healthy way.</p>
             <div className="button-container">
-            <Button title="Explore" id="feature" toggle={false}/>
-            <Button title="Shop Now" id="location" />
+              <Button title="Explore" id="about" />
+              <Button title="Shop Now" id="buy" toggle={false} />
             </div>
           </div>
-          <div className="content-image">
+          {/* <div className="content-image"> */}
             <img src={cans} alt="Product" />
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </section>

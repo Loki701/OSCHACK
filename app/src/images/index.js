@@ -10,5 +10,8 @@ import bgGoldBlack from './rene-bohmer-YeUVDKZWSZ4-unsplash.jpg'
 import bgGoldRed from './susan-wilkinson-1umIB9w6UkY-unsplash.jpg'
 import news2 from './WhatsApp-Image-2022-06-02-at-1.56.09-AM-600x831.jpeg'
 import rating from './Saffire-Maros-and-Dino-Luzzi-Energy-Drink-600x705.jpg'
+import bgBlack from './bg-black.png'
+import news3 from './news3.PNG'
+import can1 from './can1.png'
 
-export { logo, cans, bgRedBlack, bgWater, canClose, news1, canB, bgLava, bgGoldBlack, bgGoldRed, news2, rating};
+export { can1, news3, logo, cans, bgRedBlack, bgWater, canClose, news1, canB, bgLava, bgGoldBlack, bgGoldRed, news2, rating, bgBlack};

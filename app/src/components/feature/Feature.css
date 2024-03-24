@@ -1,3 +1,223 @@
-.feature{
-    height: 100vh;
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f8f9fa; */
+    /* background-image: url('../../images/rene-bohmer-YeUVDKZWSZ4-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background-image: url('../../images/bg-black.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* color: black; */
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 2rem;
+    padding-top: 25rem;
+}
+
+.feature-container {
+    width: 100%;
+    height: 50rem;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.feature-container h1 {
+    font-size: 5rem;
+    letter-spacing: -.2rem;
+    font-weight: 600;
+    margin-bottom: 15rem;
+}
+
+.feature-container .feature-description {
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    gap: 5rem;
+
+}
+
+.feature-container .feature-description img {
+    width: 30%;
+}
+
+.feature-container .feature-description .ingredient-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.ingredient-container .ingredient-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.ingredient-container .ingredient-row .ingredient {
+    height: auto;
+    min-height: 28rem;
+    width: 30rem;
+    border: solid 1px var(--main-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.5s;
+    color: var(--text-color);
+}
+
+.ingredient-container .ingredient-row .ingredient:hover {
+    border-color: var(--second-main-color);
+    /* color: white; */
+}
+
+.ingredient h3 {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: start;
+    transition: all 0.5s;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ingredient p {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: start;
+    /* text-align: center; */
+    transition: all 0.5s;
+}
+
+.buy-container {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+    padding: 20rem 5rem;
+    /* background-color: aqua; */
+    margin-top: 20rem;
+}
+
+.buy-column {
+    /* background-color: blue; */
+    height: 100%;
+    width: 50%;
+    max-width: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.buy-column:first-child {
+    margin-right: 2rem;
+}
+
+.buy-column:last-child {
+    align-items: start;
+    text-align: start;
+    max-width: 40rem;
+}
+
+.buy-column img {
+    width: 50rem;
+    /* height: ; */
+    object-fit: cover;
+}
+
+.buy-column h2 {
+    margin-bottom: 3rem;
+
+}
+
+.buy-container p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .5rem;
+}
+
+.buy-container h1 {
+    font-size: 5rem;
+    letter-spacing: -.3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1050px) {
+    .feature {
+        padding: 0 2rem;
+        padding-top: 40rem;
+    }
+
+    .feature-container h1 {
+        font-size: 3.5rem;
+        margin-bottom: 25rem;
+    }
+
+    .feature-container .feature-description {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .feature-container .feature-description img {
+        width: 50%;
+    }
+
+    .ingredient-container .ingredient-row .ingredient {
+        width: 100%;
+        max-width: 25rem;
+    }
+
+    .buy-container {
+        padding: 20rem 5rem;
+        flex-direction: column;
+        margin-top: 40rem;
+    }
+
+    .buy-column {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .buy-column img {
+        width: 70%;
+    }
+
+    .buy-column h2 {
+        margin-bottom: 2rem;
+    }
+
+    .buy-container p {
+        font-size: 1.2rem;
+    }
+
+    .buy-container h1 {
+        font-size: 4rem;
+    }
 }
