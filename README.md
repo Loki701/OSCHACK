@@ -1,19 +1,17 @@
 # OSCHACK
 
-## My solution for the OSC Hack is cater toward dino luzzy energy, it consists of redesigning the whole UI for the website and adding functionality like navbar for quick website traversal, hover effect to make the website come to live, iteractive features such are contact form submission popup notification, and complete responsice UI to make sure users get a great exerience in any device. Additionally, I implement a chatbot component that utilises chatgtp api to create a personal assistanct when a customer visits the website to make them feel welcome.
+## My solution for the OSC Hack is to cater toward Dino Luzzy Energy, it consists of redesigning the whole UI for the website and adding functionality like a navbar for quick website traversal, hover effect to make the website come to live, interactive features such are contact form submission popup notification, and complete responsive UI to make sure users get a great experience in any device. Additionally, I implement a chatbot component that utilizes Chatgtp API to create a personal assistant when a customer visits the website to make them feel welcome.
 
 ## To start the React app:
 
 Navigate to the React app directory:
 
-bash
-Copy code
 ''' cd app '''
-Start the React app:
+''' npm install '''
 
-sql
-Copy code
-npm start
+### Start the React app:
+
+''' npm start '''
 
 
 ## Flask Server
@@ -21,14 +19,12 @@ To start the Flask server:
 
 ### Navigate to the server directory:
 
-bash
 ''' cd server '''
 ### Install dependencies (make sure to include them):
 
 ''' pip install flask flask_cors python-dotenv openai '''
 
 ### Run the Flask server:
-
 
 ''' python app.py '''
 This will start the Flask server on http://127.0.0.1:5000/.
