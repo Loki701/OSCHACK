@@ -10,7 +10,7 @@ const Message = ({ text, isUser }) => {
 };
 
 const Chatbot = () => {
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([{ text: 'Hello! How can I help you learn more about Dino Energy?', isUser: false }]);
   const [inputValue, setInputValue] = useState('');
   const [expanded, setExpanded] = useState(false); // State to track expansion
 
